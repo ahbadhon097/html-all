@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic document setup -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Tag Playground (Beginner Friendly)</title>
+  <meta name="description" content="A simple page that shows many common HTML tags.">
+</head>
+<body>
+
+  <!-- Page header: semantic structure -->
+  <header>
+    <h1>HTML Tag Playground</h1>
+    <p>This page demonstrates many basic and semantic HTML tags.</p>
+
+    <!-- Navigation with links (anchors) -->
+    <nav>
+      <a href="#text">Text</a> |
+      <a href="#lists">Lists</a> |
+      <a href="#media">Media</a> |
+      <a href="#tables">Tables</a> |
+      <a href="#forms">Forms</a> |
+      <a href="#structure">Structure</a> |
+      <a href="#misc">Misc</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <!-- TEXT TAGS -->
+    <section id="text">
+      <h2>Text & Inline Tags</h2>
+
+      <article>
+        <h3>Headings</h3>
+        <h1>H1 Heading</h1>
+        <h2>H2 Heading</h2>
+        <h3>H3 Heading</h3>
+        <h4>H4 Heading</h4>
+        <h5>H5 Heading</h5>
+        <h6>H6 Heading</h6>
+      </article>
+
+      <article>
+        <h3>Paragraph & Inline Semantics</h3>
+        <p>
+          This is a <strong>strong</strong> word, this is <em>emphasized</em>,
+          this is <mark>highlighted</mark>, <small>small text</small>,
+          <del>deleted</del>, <ins>inserted</ins>, H<sub>2</sub>O uses subscript,
+          2<sup>10</sup> uses superscript.
+        </p>
+        <p>
+          An abbreviation: <abbr title="HyperText Markup Language">HTML</abbr>.
+          A short quote with <q cite="https://example.com">q tag</q>, and a longer quote:
+        </p>
+        <blockquote cite="https://example.com">
+          “This is a blockquote example, good for longer quotations.”
+        </blockquote>
+        <p>
+          Inline code: <code>&lt;div&gt;Hello&lt;/div&gt;</code> and a keyboard key: <kbd>Ctrl</kbd> + <kbd>C</kbd>,
+          program output with <samp>Operation successful</samp>, and a variable: <var>x</var>.
+        </p>
+        <p>
+          <p>This is the first line.<br>This is the second line after a break.</p>
+
+        </p>
+        <hr>
+        <p>
+          A time tag: Event on <time datetime="2025-08-23">August 23, 2025</time>.
+    
+        </p>
+        <address>
+          <strong>Contact:</strong> Jane Doe, 123 Example Rd, City, Country.
+        </address>
+      </article>
+    </section>
+
+    <!-- LISTS -->
+    <section id="lists">
+      <h2>Lists</h2>
+      <article>
+        <h3>Unordered List (ul)</h3>
+        <ul>
+          <li>Apple</li>
+          <li>Banana</li>
+          <li>Cherry</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Ordered List (ol)</h3>
+        <ol>
+          <li>First</li>
+          <li>Second</li>
+          <li>Third</li>
+        </ol>
+      </article>
+
+      <article>
+        <h3>Description List (dl)</h3>
+        <dl>
+          <dt>HTML</dt><dd>Markup language for web pages.</dd>
+          <dt>CSS</dt><dd>Styles the page.</dd>
+          <dt>JavaScript</dt><dd>Adds interactivity.</dd>
+        </dl>
+      </article>
+    </section>
+
+    <!-- MEDIA -->
+    <section id="media">
+      <h2>Media & Figures</h2>
+
+      <article>
+        <h2>Image Example</h2>
+  <img src="C:\Users\A H BADHON\Desktop\goodingo\web_Course\html_all\New folder\Assests\image1.png" alt="Sample image" width="300" height="200">
+
+  <!-- Video Example -->
+  <h2>Video Example</h2>
+  <video width="400" height="250" controls>
+    <source src="C:\Users\A H BADHON\Desktop\goodingo\web_Course\html_all\New folder\Assests\video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+      </article>
+
+      <article>
+        <h3>Audio</h3>
+        <audio controls>
+          <!-- Provide your own audio file URL if available -->
+          <source src="audio.mp4" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </article>
+
+  
+    </section>
+
+    <!-- TABLES -->
+    <section id="tables">
+      <h2>Tables</h2>
+      <table>
+        <caption>Sample Table</caption>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pencil</td>
+            <td>2</td>
+            <td>$1.00</td>
+          </tr>
+          <tr>
+            <td>Notebook</td>
+            <td>1</td>
+            <td>$2.50</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td>3</td>
+            <td>$3.50</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- FORMS -->
+    <section id="forms">
+      <h2>Forms</h2>
+      <form>
+        <!-- Group related controls -->
+        <fieldset>
+          <legend>Basic Inputs</legend>
+
+          <p>
+            <label for="name">Text:</label>
+            <input id="name" name="name" type="text" placeholder="Your name">
+          </p>
+
+          <p>
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com">
+          </p>
+
+          <p>
+            <label for="pwd">Password:</label>
+            <input id="pwd" name="pwd" type="password" placeholder="••••••••">
+          </p>
+
+          <p>
+            <label for="age">Number:</label>
+            <input id="age" name="age" type="number" min="0" max="120">
+          </p>
+
+          <p>
+            <label for="range">Range:</label>
+            <input id="range" name="range" type="range" min="0" max="10">
+          </p>
+
+          <p>
+            <label for="color">Color:</label>
+            <input id="color" name="color" type="color" value="#3366ff">
+          </p>
+
+          <p>
+            <label for="date">Date:</label>
+            <input id="date" name="date" type="date">
+          </p>
+
+          <p>
+            <label for="file">File:</label>
+            <input id="file" name="file" type="file">
+          </p>
+
+          <p>
+            <label><input type="checkbox" name="agree"> I agree</label>
+          </p>
+
+          <p>
+            Gender:
+            <label><input type="radio" name="gender" value="m"> Male</label>
+            <label><input type="radio" name="gender" value="f"> Female</label>
+            <label><input type="radio" name="gender" value="o"> Other</label>
+          </p>
+
+          <p>
+            <label for="country">Select:</label>
+            <select id="country" name="country">
+              <option value="">-- choose --</option>
+              <option>Bangladesh</option>
+              <option>India</option>
+              <option>Nepal</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="city">Datalist:</label>
+            <input list="cities" id="city" name="city" placeholder="Start typing...">
+            <datalist id="cities">
+              <option value="Dhaka">
+              <option value="Chattogram">
+              <option value="Sylhet">
+            </datalist>
+          </p>
+
+          <p>
+            <label for="msg">Textarea:</label><br>
+            <textarea id="msg" name="msg" rows="4" cols="40" placeholder="Your message"></textarea>
+          </p>
+
+          <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </p>
+
+          <p>
+            Progress: <progress value="60" max="100">60%</progress><br>
+            Meter (score): <meter value="0.7" min="0" max="1">0.7</meter>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- SEMANTIC STRUCTURE -->
+    <section id="structure">
+      <h2>Semantic Page Structure</h2>
+      <article>
+        <h3>&lt;article&gt; with &lt;aside&gt;</h3>
+        <p>This is the main article content. It can be syndicated or stand alone.</p>
+        <aside>
+          <p>This is an aside: related info or sidebar.</p>
+        </aside>
+      </article>
+
+      <article>
+        <h3>Details / Summary</h3>
+        <details>
+          <summary>Click to expand details</summary>
+          <p>Hidden content revealed with the <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> tags.</p>
+          <pre><code># Preformatted code block
+line 1
+  line 2 (indented)
+line 3
+</code></pre>
+        </details>
+      </article>
+    </section>
+
+    <!-- MISC -->
+    <section id="misc">
+      <h2>Embedded Content (placeholders)</h2>
+      <p>
+        <!-- Iframe (useful for embedding other pages; src left empty as a placeholder) -->
+        <iframe title="Example frame" width="320" height="200"></iframe>
+      </p>
+      <p>
+        <!-- figure already shown above; here is a generic container -->
+        <div>A generic block-level <code>&lt;div&gt;</code> container.</div>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p>&copy; <time datetime="2025">2025</time> HTML Tag Playground</p>
+  </footer>
+
+</body>
+</html>
